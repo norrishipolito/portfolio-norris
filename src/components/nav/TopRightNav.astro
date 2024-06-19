@@ -1,0 +1,25 @@
+---
+import Github from "../../assets/icons/Github.astro";
+import Gmail from "../../assets/icons/Gmail.astro";
+import Linkedin from "../../assets/icons/Linkedin.astro";
+import { CONTACT_LINKS } from "../../shared/constants";
+import ContactItem from "./ContactItem.astro";
+---
+
+<div
+  class="mt-auto flex flex-col items-center self-center text-gray-600 dark:text-gray-300"
+>
+  <ul class="mt-4 flex w-fit gap-6">
+    <ContactItem href={`mailto:${CONTACT_LINKS.email}`}>
+      <Gmail class="h-7 w-7 hover:scale-105" />
+    </ContactItem>
+
+    <ContactItem href={CONTACT_LINKS.github}>
+      <Github class="h-7 w-7 hover:scale-105" />
+    </ContactItem>
+
+    <ContactItem href={CONTACT_LINKS.linkedin}>
+      <Linkedin class="h-7 w-7 hover:scale-105" />
+    </ContactItem>
+  </ul>
+</div>

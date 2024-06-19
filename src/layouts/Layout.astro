@@ -1,0 +1,67 @@
+---
+import TopNavbar from "../components/nav/TopNavbar.astro";
+import MobileNav from "../components/nav/MobileNav.astro";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Astro description" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Norris Hipolito | Software Engineer</title>
+    <script is:inline>
+      function setDarkMode(document) {
+        const parent = document.documentElement;
+        if (localStorage.theme === undefined) {
+          let theme = window.matchMedia("(prefers-color-scheme: dark)")
+            ? "dark"
+            : "light";
+
+          localStorage.setItem("theme", theme);
+        }
+
+        if (localStorage.theme === "dark") {
+          parent.classList.add("dark");
+        }
+
+        if (localStorage.theme === "light") {
+          parent.classList.remove("dark");
+        }
+      }
+
+      setDarkMode(document);
+
+      document.addEventListener("astro:before-swap", (ev) => {
+        // Pass the incoming document to set the theme on it
+        setDarkMode(ev.newDocument);
+      });
+    </script>
+    <style is:global>
+      *,
+      body {
+        transition: all 0.3s ease-out;
+        transition-property: background-color, color;
+      }
+      .icon {
+        transition: none !important;
+        -moz-transition: none !important;
+        -webkit-transition: none !important;
+        -o-transition: none !important;
+      }
+    </style>
+  </head>
+  <body
+    class="flex h-screen flex-col bg-gradient-to-b from-zinc-50 to-zinc-300 text-slate-200 dark:bg-gradient-to-b dark:from-zinc-800 dark:to-zinc-900"
+  >
+    <TopNavbar />
+    <main
+      class="relative h-[100svh] w-full overflow-y-auto bg-box-black/15 dark:bg-box-black/[0.8]"
+    >
+      <MobileNav />
+      <slot />
+    </main>
+  </body>
+</html>
