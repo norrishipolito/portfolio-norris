@@ -1,16 +1,21 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TopNavbar from "../components/nav/TopNavbar.astro";
-import MobileNav from "../components/nav/MobileNav.astro";
+import BentoGrid from "../components/bento/BentoGrid.astro";
+import Contacts from "../components/bento/items/Contacts.astro";
+import Dashboard from "../components/bento/items/Dashboard.astro";
+import Experience from "../components/bento/items/Experience.astro";
+import Hero from "../components/bento/items/Hero.astro";
+import Skills from "../components/bento/items/Skills.astro";
+import Status from "../components/bento/items/Status.astro";
 ---
 
 <Layout>
-  <div class="flex flex-col items-center justify-center h-full">
-    <h1 class="text-4xl font-bold text-center text-white dark:text-black">
-      404 - Page Not Found
-    </h1>
-    <p class="text-lg text-center text-white dark:text-black">
-      The page you are looking for does not exist.
-    </p>
-  </div>
+  <BentoGrid>
+    <Hero />
+    <Experience />
+    <Contacts />
+    <Skills />
+    <Dashboard />
+    <Status />
+  </BentoGrid>
 </Layout>
