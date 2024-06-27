@@ -1,25 +1,36 @@
 ---
 import Github from "../../assets/icons/Github.astro";
 import Gmail from "../../assets/icons/Gmail.astro";
+import Location from "../../assets/icons/Location.astro";
 import Linkedin from "../../assets/icons/Linkedin.astro";
 import { CONTACT_LINKS } from "../../shared/constants";
 import ContactItem from "./ContactItem.astro";
 ---
 
-<div
-  class="mt-auto flex flex-col items-center self-center text-gray-600 dark:text-gray-300"
->
-  <ul class="mt-4 flex w-fit gap-6">
+<div class="h-full grid flex-col text-gray-600 dark:text-gray-300">
+  <h1
+    class="text-lg font-bold text-slate-800 self-start justify-center dark:text-white"
+  >
+    Contacts
+  </h1>
+  <ul class="flex flex-col justify-self-start w-fit px-5 gap-6">
     <ContactItem href={`mailto:${CONTACT_LINKS.email}`}>
       <Gmail class="h-7 w-7 hover:scale-105" />
+      <span class="text-sm">norrishipolito@gmail.com</span>
     </ContactItem>
 
     <ContactItem href={CONTACT_LINKS.github}>
       <Github class="h-7 w-7 hover:scale-105" />
+      <span class="text-sm">github.com/norrishipolito</span>
     </ContactItem>
 
     <ContactItem href={CONTACT_LINKS.linkedin}>
       <Linkedin class="h-7 w-7 hover:scale-105" />
+      <span class="text-sm">linkedin.com/norrishipolito</span>
+    </ContactItem>
+    <ContactItem>
+      <Location class="h-7 w-7 hover:scale-105" />
+      <span class="text-sm">Cebu City, Philippines</span>
     </ContactItem>
   </ul>
 </div>
