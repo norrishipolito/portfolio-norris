@@ -9,7 +9,7 @@ import ToggleThemeButton from "../tsx/ToggleThemeButton";
 <ul class="flex flex-row items-center justify-end gap-5" transition:persist>
   {
     NAV_LINKS.map((link, index) => (
-      <li class="flex flex-row items-center gap-1 text-xl text-gray-600 transition-all hover:text-gray-900 dark:text-gray-500 dark:hover:text-white">
+      <li class="flex flex-row items-center gap-1 text-xl transition-all hover:text-gray-900 text-gray-600 dark:text-gray-500 dark:hover:text-white">
         <a href={link.href}>
           {index === 0 && <Coffee class="h-6 w-6" />}
           {index === 1 && <Person class="h-6 w-6" />}
