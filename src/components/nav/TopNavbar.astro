@@ -4,19 +4,21 @@ import NavLinks from "./NavLinks.astro";
 ---
 
 <nav
-  class="sticky transition-all hidden w-full h-60 left-0 top-0 flex-row md:flex justify-between bg-gradient-to-b from-zinc-50 to-zinc-300 text-slate-200 dark:bg-gradient-to-b dark:from-zinc-800 dark:to-zinc-900 px-44 lg:px-32 xl:px-64"
+  class="sticky transition-all hidden w-full h-60 left-0 top-0 flex-row md:flex bg-gradient-to-b from-zinc-50 to-zinc-300 text-slate-200 dark:bg-gradient-to-b dark:from-zinc-800 dark:to-zinc-900 justify-center"
   transition:persist
 >
-  <div class="flex flex-row items-center">
-    <div class="hidden lg:block"><Avatar transition:persist /></div>
-    <a href="/" class="flex flex-col items-center">
-      <h1 class="text-2xl font-bold text-slate-800 dark:text-white">
-        Norris Hipolito
-      </h1>
-      <p class="text-md font-light text-slate-600 dark:text-slate-300">
-        Software Engineer
-      </p>
-    </a>
+  <div class="flex flex-row w-full max-w-7xl justify-between px-4">
+    <div class="flex flex-row items-center min-w-72">
+      <div class="block"><Avatar transition:persist /></div>
+      <a href="/" class="flex flex-col items-center">
+        <h1 class="text-2xl font-bold text-slate-800 dark:text-white">
+          Norris Hipolito
+        </h1>
+        <p class="text-md font-light text-slate-600 dark:text-slate-300">
+          Software Engineer
+        </p>
+      </a>
+    </div>
+    <NavLinks />
   </div>
-  <NavLinks />
 </nav>

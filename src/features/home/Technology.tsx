@@ -6,7 +6,7 @@ type Props = {};
 function Technology({}: Props) {
   return (
     <div>
-      <div className="mt-6 grid grid-cols-4 place-items-center gap-8 md:grid-cols-7">
+      <div className="mt-4 grid grid-cols-4 place-items-center gap-8 md:grid-cols-7 justify-self-center self-center">
         {technologies.map((tech, idx) => (
           <AnimatedTooltip
             key={idx}
