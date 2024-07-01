@@ -1,0 +1,11 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import MainContainer from "../../components/MainContainer.astro";
+import Maintenance from "../../features/project/Maintenance";
+---
+
+<Layout>
+  <MainContainer>
+    <Maintenance client:load />
+  </MainContainer>
+</Layout>

@@ -1,0 +1,20 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import BentoGrid from "../../components/bento/BentoGrid.astro";
+import Contacts from "../../components/bento/items/Contacts.astro";
+import Dashboard from "../../components/bento/items/Dashboard.astro";
+import Experience from "../../components/bento/items/Experience.astro";
+import AboutMe from "../../components/bento/items/AboutMe.astro";
+import Skills from "../../components/bento/items/Skills.astro";
+import Status from "../../components/bento/items/Status.astro";
+---
+
+<Layout>
+  <BentoGrid>
+    <AboutMe />
+    <Experience />
+    <Contacts />
+    <Skills />
+    <Status />
+  </BentoGrid>
+</Layout>
