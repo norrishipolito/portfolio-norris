@@ -11,7 +11,7 @@ const experiences: Experience[] = [
     jobTitle: "Software Engineer",
     dateRange: "July 2023 - Present",
     description:
-      "Designed and implemented an information system to scan for printer vulnerabilities, enhancing network security.",
+      "Managed and created tools that automate the testing of printer firmware in embedded web server, reducing testing time. Configured and managed Jenkins for automated testing and deployment.",
   },
   {
     company: "Lexmark",

@@ -9,28 +9,36 @@ import ContactItem from "./ContactItem.astro";
 
 <div class="h-full grid flex-col text-gray-600 dark:text-gray-300">
   <h1
-    class="text-lg font-bold self-start justify-center text-slate-800 dark:text-white"
+    class="text-lg font-bold self-start justify-center text-slate-800 dark:text-slate-300"
   >
     Contacts
   </h1>
   <ul class="flex flex-col justify-self-start w-fit p-5 lg:px-1 xl:px-5 gap-6">
     <ContactItem href={`mailto:${CONTACT_LINKS.email}`}>
       <Gmail class="h-7 w-7 hover:scale-105" />
-      <span class="text-sm">norrishipolito@gmail.com</span>
+      <span class="text-slate-800 dark:text-slate-300 text-sm"
+        >norrishipolito@gmail.com</span
+      >
     </ContactItem>
 
     <ContactItem href={CONTACT_LINKS.github}>
       <Github class="h-7 w-7 hover:scale-105" />
-      <span class="text-sm">github.com/norrishipolito</span>
+      <span class="text-slate-800 dark:text-slate-300 text-sm"
+        >github.com/norrishipolito</span
+      >
     </ContactItem>
 
     <ContactItem href={CONTACT_LINKS.linkedin}>
       <Linkedin class="h-7 w-7 hover:scale-105" />
-      <span class="text-sm">linkedin.com/norrishipolito</span>
+      <span class="text-slate-800 dark:text-slate-300 text-sm"
+        >linkedin.com/norrishipolito</span
+      >
     </ContactItem>
     <ContactItem>
       <Location class="h-7 w-7 hover:scale-105" />
-      <span class="text-sm">Cebu City, Philippines</span>
+      <span class="text-slate-800 dark:text-slate-300 text-sm"
+        >Cebu City, Philippines</span
+      >
     </ContactItem>
   </ul>
 </div>
