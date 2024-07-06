@@ -1,7 +1,8 @@
 ---
-import Memoji from "../../../assets/images/Memoji.png";
 import WavingHand from "../../../assets/icons/WavingHand.astro";
 import RightArrow from "../../../assets/icons/RightArrow.astro";
+import avatar_image from "../../../assets/images/Memoji.png";
+import { Image } from "astro:assets";
 ---
 
 <div
@@ -38,10 +39,10 @@ import RightArrow from "../../../assets/icons/RightArrow.astro";
         </a>
       </div>
     </div>
-    <img
+    <Image
       width="300"
       height="300"
-      src="/src/assets/images/Memoji.png"
+      src={avatar_image}
       class="w-auto max-h-[300px] md:max-h-[500px] select-none absolute right-[-90px] bottom-[-20px] z-[-1] opacity-50 pointer-events-none"
       alt="Norris Memoji"
     />

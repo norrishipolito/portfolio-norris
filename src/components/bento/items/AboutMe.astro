@@ -1,5 +1,6 @@
 ---
-
+import avatar_image from "../../../assets/images/Memoji.png";
+import { Image } from "astro:assets";
 ---
 
 <div
@@ -27,10 +28,10 @@
         </p>
       </div>
     </div>
-    <img
+    <Image
       width="300"
       height="300"
-      src="/src/assets/images/Memoji.png"
+      src={avatar_image}
       class="w-auto max-h-[300px] select-none absolute right-[-90px] bottom-[-20px] z-[-1] opacity-50 lg:opacity-100 lg:relative lg:right-auto lg:bottom-auto lg:z-auto pointer-events-none"
       alt="Norris Memoji"
     />

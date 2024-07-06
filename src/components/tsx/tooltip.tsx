@@ -1,10 +1,4 @@
-import {
-  AnimatePresence,
-  motion,
-  useMotionValue,
-  useSpring,
-  useTransform,
-} from "framer-motion";
+import { AnimatePresence, motion, useMotionValue } from "framer-motion";
 import { useEffect, useState } from "react";
 
 export const AnimatedTooltip = ({
@@ -44,8 +38,6 @@ export const AnimatedTooltip = ({
   }, []);
 
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
-  const x = useMotionValue(0); // going to set this value on mouse move
-  // rotate the tooltip
 
   return (
     <>
