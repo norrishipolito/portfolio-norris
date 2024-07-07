@@ -17,6 +17,21 @@ export const technologies: Technology[] = [
     alt: "Java",
   },
   {
+    href: "https://www.selenium.dev/",
+    src: "https://seeklogo.com/images/S/selenium-logo-A1B53CEFB0-seeklogo.com.png",
+    alt: "Selenium",
+  },
+  {
+    href: "https://www.jenkins.io/",
+    src: "https://ftp.yz.yamagata-u.ac.jp/pub/misc/jenkins/art/jenkins-logo/headshot.svg",
+    alt: "Jenkins",
+  },
+  {
+    href: "https://www.jenkins.io/",
+    src: "https://imgs.search.brave.com/aM5zpIQAYZPXkffilGdl2dkBk9bzjFj9FHoUxaA1qH0/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9zdG9y/YWdlLmdvb2dsZWFw/aXMuY29tL2RhdGFu/eXplLWRhdGEvL3Rl/Y2hub2xvZ2llcy83/NDJlN2U0MzE0NmU1/Mzc2ODUwZmNiZmFj/ZDQ1MGI2NWU1YWI3/NTdlLnBuZw",
+    alt: "TestNG",
+  },
+  {
     href: "https://www.python.org/",
     src: "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/python-colored.svg",
     alt: "Python",
