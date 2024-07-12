@@ -1,6 +1,7 @@
+import React from "react";
 import type { SVGProps } from "react";
 
-export function LineMdCoffeeLoop(props: SVGProps<SVGSVGElement>) {
+export function LineMdBeer(props: SVGProps<SVGSVGElement>) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -16,38 +17,25 @@ export function LineMdCoffeeLoop(props: SVGProps<SVGSVGElement>) {
         strokeLinejoin="round"
         strokeWidth={2}
       >
-        <path
-          strokeDasharray={48}
-          strokeDashoffset={48}
-          d="M17 4v9a3 3 0 0 1-3 3H8a3 3 0 0 1-3-3V4z"
-        >
+        <path strokeDasharray={60} strokeDashoffset={60} d="M18 3L16 21H7L5 3z">
           <animate
             fill="freeze"
             attributeName="stroke-dashoffset"
-            begin="0.4s"
-            dur="0.6s"
-            values="48;0"
+            dur="0.45s"
+            values="60;0"
           ></animate>
         </path>
         <path
           strokeDasharray={14}
           strokeDashoffset={14}
-          d="M17 9H20C20.55 9 21 8.55 21 8V5C21 4.45 20.55 4 20 4H17"
+          d="M6 7.67C6.6 7.3 7.22 7 8 7C10 7 11 9 13 9C14.64 9 15.6 7.66 17 7.17"
         >
           <animate
             fill="freeze"
             attributeName="stroke-dashoffset"
-            begin="1s"
-            dur="0.2s"
-            values="14;28"
-          ></animate>
-        </path>
-        <path strokeDasharray={10} strokeDashoffset={10} d="M11 20h8M11 20h-8">
-          <animate
-            fill="freeze"
-            attributeName="stroke-dashoffset"
-            dur="0.3s"
-            values="10;0"
+            begin="0.525s"
+            dur="0.15s"
+            values="14;0"
           ></animate>
         </path>
       </g>

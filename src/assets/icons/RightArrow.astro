@@ -11,18 +11,20 @@ const props = Astro.props;
 >
   <g transform="translate(24 0) scale(-1 1)">
     <g
+      id="theGroup"
       fill="none"
       stroke="currentColor"
       stroke-linecap="round"
       stroke-linejoin="round"
-      stroke-width="2"
+      stroke-width="3"
     >
       <path stroke-dasharray="14" stroke-dashoffset="14" d="M19 12H5.5">
         <animate
           fill="freeze"
           attributeName="stroke-dashoffset"
-          dur="0.225s"
-          values="14;0"></animate>
+          dur="0.3"
+          values="14;0"
+          begin="0.1s;knowMeMore.mouseover;"></animate>
       </path>
       <path
         stroke-dasharray="8"
@@ -32,9 +34,9 @@ const props = Astro.props;
         <animate
           fill="freeze"
           attributeName="stroke-dashoffset"
-          begin="0.225s"
-          dur="0.15s"
-          values="8;0"></animate>
+          dur="0.4s"
+          values="8;0"
+          begin="0.1s;knowMeMore.mouseover;"></animate>
       </path>
     </g>
   </g>

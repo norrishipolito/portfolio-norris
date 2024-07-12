@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { NAV_LINKS } from "../../shared/constants";
-import { LineMdCoffeeLoop } from "../../assets/icons/tsx/CoffeeReact";
-import { LineMdLaptop } from "../../assets/icons/tsx/LaptopReact";
+import { LineMdBeer } from "../../assets/icons/tsx/BeerReact";
+import { LineMdComputer } from "../../assets/icons/tsx/ComputerReact";
 import { LineMdPerson } from "../../assets/icons/tsx/PersonReact";
 
 type Props = {};
@@ -114,11 +114,11 @@ function Hamburger({}: Props) {
                   href={link.href}
                   className="flex flex-col items-center justify-center gap-3"
                 >
-                  {index === 0 && <LineMdCoffeeLoop className="h-7 w-7" />}
+                  {index === 0 && <LineMdBeer className="h-7 w-7" />}
 
                   {index === 1 && <LineMdPerson className="h-7 w-7" />}
 
-                  {index === 2 && <LineMdLaptop className="h-7 w-7" />}
+                  {index === 2 && <LineMdComputer className="h-7 w-7" />}
                   {link.label}
                 </a>
               </motion.div>

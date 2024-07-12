@@ -1,6 +1,7 @@
+import React from "react";
 import type { SVGProps } from "react";
 
-export function LineMdLaptop(props: SVGProps<SVGSVGElement>) {
+export function LineMdComputer(props: SVGProps<SVGSVGElement>) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -16,22 +17,29 @@ export function LineMdLaptop(props: SVGProps<SVGSVGElement>) {
         strokeLinejoin="round"
         strokeWidth={2}
       >
-        <path strokeDasharray={50} strokeDashoffset={50} d="M12 17H5V7H19V17Z">
+        <path strokeDasharray={6} strokeDashoffset={6} d="M12 21H17M12 21H7">
           <animate
             fill="freeze"
             attributeName="stroke-dashoffset"
-            begin={"0.8s"}
-            dur="0.6s"
-            values="50;0"
+            dur="0.225s"
+            values="6;0"
           ></animate>
         </path>
-        <path strokeDasharray={20} strokeDashoffset={20} d="M3 19H21">
+        <path strokeDasharray={6} strokeDashoffset={6} d="M12 21V17">
           <animate
             fill="freeze"
             attributeName="stroke-dashoffset"
-            begin="1.2s"
-            dur="0.3s"
-            values="20;0"
+            dur="0.15s"
+            values="6;0"
+          ></animate>
+        </path>
+        <path strokeDasharray={64} strokeDashoffset={64} d="M12 17H3V5H21V17Z">
+          <animate
+            fill="freeze"
+            attributeName="stroke-dashoffset"
+            begin="0.225s"
+            dur="0.45s"
+            values="64;0"
           ></animate>
         </path>
       </g>
