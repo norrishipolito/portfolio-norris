@@ -15,9 +15,9 @@ const Hero = (props: Props) => {
               initial={{ y: 20, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{
-                duration: 0.8,
+                duration: 0.6,
                 delay: 0.2,
-                easeIn: [0, 0.71, 0.2, 1.01],
+                y: { stiffness: 1000, velocity: -100 },
               }}
             >
               <h6 className="text-xl font-light m-0">Hello World,</h6>
@@ -26,9 +26,9 @@ const Hero = (props: Props) => {
               initial={{ y: 20, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{
-                duration: 0.8,
+                duration: 0.6,
                 delay: 0.3,
-                easeIn: [0, 0.71, 0.2, 1.01],
+                y: { stiffness: 1000, velocity: -100 },
               }}
             >
               <div className="flex flex-row gap-3">
@@ -48,9 +48,9 @@ const Hero = (props: Props) => {
               initial={{ y: 20, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{
-                duration: 0.8,
+                duration: 0.6,
                 delay: 0.4,
-                easeIn: [0, 0.71, 0.2, 1.01],
+                y: { stiffness: 1000, velocity: -100 },
               }}
             >
               I find joy in both web development and test automation. I'm
@@ -63,9 +63,9 @@ const Hero = (props: Props) => {
               initial={{ y: 20, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{
-                duration: 0.8,
+                duration: 0.6,
                 delay: 0.5,
-                easeIn: [0, 0.71, 0.2, 1.01],
+                y: { stiffness: 1000, velocity: -100 },
               }}
             >
               <motion.a

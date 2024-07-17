@@ -45,12 +45,19 @@ function Hamburger({}: Props) {
   };
   const listItemVariants = {
     closed: {
-      x: -10,
+      y: 20,
       opacity: 0,
+      transition: {
+        y: { stiffness: 1000 },
+      },
     },
     opened: {
-      x: 0,
+      y: 0,
       opacity: 1,
+      transition: {
+        y: { stiffness: 1000, velocity: -100 },
+        delayChildren: 0.4,
+      },
     },
   };
   const listVariants = {
@@ -62,7 +69,7 @@ function Hamburger({}: Props) {
       transition: {
         easeInOut: "linear",
         duration: 0.3,
-        delayChildren: 0.3,
+        delayChildren: 0.4,
       },
     },
   };
@@ -101,18 +108,18 @@ function Hamburger({}: Props) {
           variants={listVariants}
           initial="closed"
           animate="opened"
-          className="fixed left-0 top-0 z-40 flex h-[100svh] w-screen flex-col items-center justify-center bg-gradient-to-b from-zinc-300 to-zinc-50 text-slate-800 dark:text-white dark:bg-gradient-to-b dark:from-zinc-900 dark:to-zinc-800 pb-10 text-4xl"
+          className="fixed left-0 top-0 z-40 flex h-[100svh] w-screen flex-col items-start justify-center bg-gradient-to-b from-zinc-300 to-zinc-50 text-slate-800 dark:text-white dark:bg-gradient-to-b dark:from-zinc-900 dark:to-zinc-800 pb-20 text-4xl"
         >
-          <div className="z-50 flex flex-1 flex-col items-center justify-center gap-10">
+          <div className="z-50 flex flex-1 flex-col items-start justify-center gap-10 pl-10">
             {NAV_LINKS.map((link, index) => (
               <motion.div
                 variants={listItemVariants}
-                className=""
+                className="hover:underline hover:underline-offset-8"
                 key={link.label}
               >
                 <a
                   href={link.href}
-                  className="flex flex-col items-center justify-center gap-3"
+                  className="flex flex-row items-center justify-center gap-3 "
                 >
                   {index === 0 && <LineMdBeer className="h-7 w-7" />}
 
