@@ -1,11 +1,11 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import MainContainer from "../components/MainContainer.astro";
-import Hero from "../components/bento/items/Hero.astro";
+import Hero from "../components/tsx/Hero";
 ---
 
 <Layout>
   <MainContainer>
-    <Hero />
+    <Hero client:load />
   </MainContainer>
 </Layout>

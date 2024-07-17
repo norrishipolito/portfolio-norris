@@ -1,0 +1,17 @@
+---
+import { projects } from "../../features/project/projects";
+import type { GetStaticPaths } from "astro";
+
+export const getStaticPaths = (() => {
+  const paths = projects.map((project) => ({
+    params: { slug: project.href.replace("/projects/", "") },
+  }));
+  return paths;
+}) satisfies GetStaticPaths;
+
+const { slug } = Astro.params;
+
+const project = projects.find(
+  (project) => project.href === `/projects/${slug}`
+);
+---
